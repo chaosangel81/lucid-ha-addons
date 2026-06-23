@@ -9,7 +9,7 @@
 # Docs on each field: https://developers.home-assistant.io/docs/add-ons/configuration
 
 name: Now Showing
-version: "2.3.2-lucid43"
+version: "2.3.2-lucid44"
 slug: lucid_now_showing
 description: Cinema-style now-playing and coming-soon kiosk for Home Assistant.
 url: https://github.com/rusty4444/now-showing-ha
@@ -26,7 +26,7 @@ hassio_api: true
 homeassistant_api: true
 auth_api: false
 ingress: true
-ingress_port: 8100
+ingress_port: 8099
 ingress_entry: /now_showing.html
 panel_icon: mdi:theater
 panel_title: Now Showing
@@ -34,9 +34,9 @@ ports:
   # Direct access for Fully Kiosk / other tablets that can't use ingress.
   # Leaving it empty in options.json disables the host port; users only need
   # this exposed if they browse from outside the HA frontend.
-  8100/tcp: 8100
+  8099/tcp: 8099
 ports_description:
-  8100/tcp: Direct HTTP access for external kiosks (leave empty to disable)
+  8099/tcp: Direct HTTP access for external kiosks (leave empty to disable)
 map:
   - ssl
   - data
